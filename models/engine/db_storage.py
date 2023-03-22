@@ -70,7 +70,7 @@ class DBStorage:
                 self.__session.flush()
                 self.__session.refresh(obj)
             except Exception as ex:
-                self.__session.rollback(
+                self.__session.rollback()
                 raise ex
 
     def save(self):
