@@ -13,7 +13,7 @@ env.hosts = ["34.224.2.20", "100.26.252.182"]
 def do_pack():
     """makes tar gzipped archive of the directory web_static."""
     d = datetime.utcnow()
-    file = "versions/web_static_{}{}{}{}{}{}.tgz".format(dt.year,
+    file = "versions/web_static_{}{}{}{}{}{}.tgz".format(d.year,
                                                          d.month,
                                                          d.day,
                                                          d.hour,
